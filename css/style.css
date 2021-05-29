@@ -271,6 +271,25 @@ button
 }
 
 
+/* For Info-Text style */
+
+.T_In_cont
+{
+    width: 80%;
+    margin: 10px auto;
+}
+
+.T_In_Title
+{
+    margin: 10px auto;
+}
+
+.T_In_Text
+{
+    margin: 10px auto;
+}
+
+
 /* >>>>>>>>>>>-Web Content-<<<<<<<<<< */
 
 
