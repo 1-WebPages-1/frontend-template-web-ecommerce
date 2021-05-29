@@ -4,6 +4,7 @@ document.querySelector('.M-Icon-Container').addEventListener('click', () =>
     document.querySelector('.nav-container').classList.toggle('show')
   });
 
+
 /*
 
  Cookies
