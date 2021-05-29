@@ -47,7 +47,7 @@
 
     /* Default animation for hover */
 
-    --Lil-Zoom-1: scale(1.1);
+    --Lil-Zoom-1: scale(1.05);
     --An-Delay: .3s;
     --Rot-a-Bit: rotate(20deg);
 
@@ -62,7 +62,20 @@
     /* Product-Card size's */
     --Prod-Width: 300px;
     --Prod-height: 370px;
+
+    /* Mobile prod size */
+
+    --Prod-Width_mob: 280px;
+    --Prod-height_mob: 350px;
+
     /* Banners big and medium, default size */
+
+    /* default size's */
+
+    --Def_pre_Size-W: 100%;
+    --Def_pre_Size-H: 100%;
+
+    /* Especific Size's */
 
         /* >>>>>COMPUTER<<<<< */
 
@@ -134,7 +147,7 @@ html
 {
     /* for inclusive design */
     font-size: 62.5%;
-    overflow-x: none;
+    overflow-x: none !important;
 }
 
 body
@@ -264,8 +277,8 @@ button
 /* Banner 1 */
 .C-Bn
 {
-    width: var(--Comp_big_width);
-    height: var(--Comp_big_height);
+    width: var(--Def_pre_Size-W);
+    height: var(--Def_pre_Size-H);
     background-image: url('../assets/banners/computer/984x500-banner-COMP-for-home.png');
     background-position: center;
     background-size: cover;
@@ -273,10 +286,10 @@ button
     text-align: center;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: ". . ."
-                         ". text ."
-                         ". . ."
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". . . . ."
+                         ". text text text ."
+                         ". . . . ."
 }
 
 .Ban-Text-I-container
@@ -294,8 +307,8 @@ button
 /* Banner Type 2 */
 .Tp2
 {
-    width: var(--Comp_med_width) !;
-    height: var(--Comp_med_height);
+    width: var(--Def_pre_Size-W) !;
+    height: var(--Def_pre_Size-H);
     background-image: url('../assets/banners/computer/984x334-banner-for-COMP-medium.png');
 }
 
@@ -380,17 +393,18 @@ button
 {
     .C-Bn
     {
-        width: var(--Tablet_big_width);
-        height: var(--Tablet_big_height);
+        width: var(--Def_pre_Size-W);
+        height: var(--Def_pre_Size-H);
         background-image: url('../assets/banners/tablet/728x350px-bigger-img.png');
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: ". . ."
                              "text text text"
                              ". . ."
     }
     .Tp2
     {
-        width: var(--Tablet_med_width);
-        height: var(--Tablet_med_height);
+        width: var(--Def_pre_Size-W);
+        height: var(--Def_pre_Size-H);
         background-image: url('../assets/banners/tablet/728x210-mid-img.png');
     }
 
@@ -451,21 +465,18 @@ button
 }
 
 
-@media(max-width: 720px)
+@media(max-width: 500px)
 {
     .C-Bn
     {
-        width: var(--Phone_big_width);
-        height: var(--Phone_big_height);
+        width: var(--Def_pre_Size-W);
+        height: var(--Def_pre_Size-H);
         background-image: url('../assets/banners/mobile/300x190-bigger-banner.png');
-        grid-template-areas: ". . ."
-                             "text text text"
-                             ". . ."
     }
     .Tp2
     {
-        width: var(--Phone_med_width);
-        height: var(--Phone_med_height);
+        width: var(--Def_pre_Size-W);
+        height: var(--Def_pre_Size-H);
         background-image: url('../assets/banners/mobile/300x130-mid-img-mob.png');
     }
 
@@ -478,5 +489,12 @@ button
     {
         display: inline-block;
         width: 100%;
+    }
+
+    .Prod
+    {
+        margin: 10px 0;
+        width:var(--Prod-Width_mob);
+        height:var(--Prod-height_mob);
     }
 }
