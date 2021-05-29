@@ -93,3 +93,38 @@ ul.slider li:target
     display: inline-block;
     text-align: center;
 }
+
+@media(max-width: 768px)
+{
+    .Prod_pre_Container
+    {
+        grid-template-columns: auto;
+    }
+
+    .Prod_pre_Img
+    {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .Prod_pre_Container
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: "PIm"
+                             "CCard";
+    }
+
+    .Prod_pre_Img
+    {
+        width: 280px;
+        height: 280px;
+    }
+
+    .Prod_pre_Title
+    {
+        margin-top: 30px;
+    }
+}
