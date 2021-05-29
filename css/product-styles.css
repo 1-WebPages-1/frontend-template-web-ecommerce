@@ -18,7 +18,7 @@ body
     display: var(--P_Container_Display);
     grid-template-columns: var(--P_Container_Sizes);
     grid-template-areas: var(--P_Container_Design);
-    margin: 20px auto;
+    margin: 30px auto 50px auto;
     gap: 20px;
 }
 
@@ -38,6 +38,18 @@ body
     margin: auto auto;
 }
 
+/* For other's product's title */
+
+h2.T_In_Title
+{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.ProdPaT
+{
+    text-align: center;
+}
 
 /* Product Slider */
 
